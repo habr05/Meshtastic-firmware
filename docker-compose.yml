@@ -1,11 +1,10 @@
-version: "3.7"
-
 services:
+  name: meshtastic
   meshtastic-node:
     build: .
-    deploy:
-      mode: replicated
-      replicas: 4
+#    deploy:
+#      mode: replicated
+#      replicas: 4
     networks:
       - mesh
 
